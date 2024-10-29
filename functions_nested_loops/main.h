@@ -1,7 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _putchar(char c); /* Déclaration pour _putchar */
-void print_alphabet(void); /* Déclaration pour print_alphabet */
+int _putchar(char c);
+void print_alphabet_x10(void);
 
 #endif /* MAIN_H */
+
