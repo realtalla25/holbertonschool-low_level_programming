@@ -1,15 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * times_table - Prints the 9 times table, starting from 0.
+ * times_table - prints the 9 times table
  */
-
 void times_table(void)
 {
-	int i;
-	int j;
-	int product;
+	int i, j, product;
 
 	for (i = 0; i <= 9; i++)
 	{
@@ -17,10 +13,17 @@ void times_table(void)
 		{
 			product = i * j;
 			if (j == 0)
+			{
+				/* First number in the row, print without leading space */
 				printf("%d", product);
+			}
 			else
-				printf(", %2d", product);
+			{
+				/* For subsequent numbers, print a comma and space */
+				printf(", %d", product);
+			}
 		}
+		/* Newline after each row */
 		printf("\n");
 	}
 }
