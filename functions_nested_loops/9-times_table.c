@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * times_table - Prints the 9 times table, starting with 0.
+ *
+ * This function prints the 9 times table in a formatted manner,
+ * with each row corresponding to the products of 9 with numbers
+ * from 0 to 9.
+ */
 void times_table(void)
 {
 	int i, j, product;
